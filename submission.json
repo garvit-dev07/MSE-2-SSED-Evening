@@ -1,0 +1,11 @@
+{
+  "studentName": "Garvit Tyagi",
+  "rollNumber": "202501200004",
+  "section": "AIML-B",
+  "branch": "AI & ML",
+  "githubUsername": "garvit-dev07",
+  "dockerHubUsername": "garvit-dev07",
+  "githubForkUrl": "https://github.com/garvit-dev07/MSE-2-SSED-Evening",
+  "dockerHubFrontendUrl": "https://hub.docker.com/r/garvit-dev07/frontend",
+  "dockerHubBackendUrl": "https://hub.docker.com/r/garvit-dev07/backend"
+}

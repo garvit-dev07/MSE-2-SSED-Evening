@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mid-Semester Examination – 2 Report</title>
+<style>
+  @page {
+    size: A4;
+    margin: 14mm 16mm 14mm 16mm;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #1e293b;
+    line-height: 1.45;
+    font-size: 9.5pt;
+    margin: 0;
+    padding: 0;
+  }
+  .page {
+    page-break-after: always;
+    position: relative;
+    min-height: 260mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .page:last-child {
+    page-break-after: avoid;
+  }
+  .page-header {
+    font-size: 8pt;
+    color: #64748b;
+    border-bottom: 1px solid #cbd5e1;
+    padding-bottom: 4px;
+    margin-bottom: 14px;
+  }
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 8pt;
+    color: #64748b;
+    border-top: 1px solid #cbd5e1;
+    padding-top: 5px;
+    margin-top: 12px;
+  }
+  .main-title {
+    color: #1e3a8a;
+    font-size: 20pt;
+    font-weight: 800;
+    margin: 0 0 4px 0;
+    letter-spacing: -0.5px;
+  }
+  .sub-title {
+    color: #475569;
+    font-size: 10.5pt;
+    font-weight: 500;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #1e3a8a;
+  }
+  h2.section-head {
+    color: #1e3a8a;
+    font-size: 11.5pt;
+    font-weight: 700;
+    margin: 12px 0 6px 0;
+    border-bottom: 1.5px solid #e2e8f0;
+    padding-bottom: 3px;
+  }
+  h3.sub-section-head {
+    color: #0f172a;
+    font-size: 9.5pt;
+    font-weight: 700;
+    margin: 8px 0 3px 0;
+  }
+  table.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    font-size: 8.5pt;
+  }
+  table.info-table th, table.info-table td {
+    padding: 5px 8px;
+    border: 1px solid #cbd5e1;
+    text-align: left;
+  }
+  table.info-table th {
+    background-color: #f1f5f9;
+    color: #0f172a;
+    width: 28%;
+    font-weight: 600;
+  }
+  table.info-table td {
+    color: #1e293b;
+  }
+  a {
+    color: #2563eb;
+    text-decoration: underline;
+    word-break: break-all;
+  }
+  .code-block {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    padding: 6px 8px;
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 7.8pt;
+    line-height: 1.32;
+    color: #0f172a;
+    white-space: pre-wrap;
+    word-break: break-word;
+    margin: 4px 0 8px 0;
+  }
+  .text-desc {
+    font-size: 8.5pt;
+    color: #334155;
+    margin: 2px 0 4px 0;
+  }
+  .declaration-box {
+    background: #f0f7ff;
+    border: 1.5px solid #93c5fd;
+    border-radius: 4px;
+    padding: 10px 12px;
+    margin-top: 14px;
+    font-style: italic;
+    color: #1e3a8a;
+    font-size: 8.8pt;
+    line-height: 1.45;
+  }
+  .sig-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    padding-top: 10px;
+    border-top: 1px dashed #cbd5e1;
+    font-size: 8.8pt;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<div class="page">
+  <div>
+    <div class="main-title">Mid-Semester Examination – 2 Report</div>
+    <div class="sub-title">Subject: Software Engineering and DevOps (AI310B) | Set: Set 2 – Evening Shift</div>
+
+    <h2 class="section-head">A. Student Information</h2>
+    <table class="info-table">
+      <tr>
+        <th>Student Name</th>
+        <td><strong>Garvit Tyagi</strong></td>
+      </tr>
+      <tr>
+        <th>Roll Number</th>
+        <td><strong>202501200004</strong></td>
+      </tr>
+      <tr>
+        <th>Section</th>
+        <td>AIML-B</td>
+      </tr>
+      <tr>
+        <th>Branch</th>
+        <td>AI &amp; ML (Artificial Intelligence and Machine Learning)</td>
+      </tr>
+      <tr>
+        <th>GitHub Username</th>
+        <td>garvit-dev07</td>
+      </tr>
+      <tr>
+        <th>Docker Hub Username</th>
+        <td>garvit-dev07</td>
+      </tr>
+    </table>
+
+    <h2 class="section-head">B. Repository and Submission Details</h2>
+    <table class="info-table">
+      <tr>
+        <th>GitHub Fork Repository URL</th>
+        <td><a href="https://github.com/garvit-dev07/MSE-2-SSED-Evening">https://github.com/garvit-dev07/MSE-2-SSED-Evening</a></td>
+      </tr>
+      <tr>
+        <th>Original Examination Repo URL</th>
+        <td><a href="https://github.com/atindeRR/MSE-2-SSED-Evening">https://github.com/atindeRR/MSE-2-SSED-Evening</a></td>
+      </tr>
+      <tr>
+        <th>Target Branch Name</th>
+        <td>main</td>
+      </tr>
+      <tr>
+        <th>Docker Hub Frontend URL</th>
+        <td><a href="https://hub.docker.com/r/garvit-dev07/frontend">https://hub.docker.com/r/garvit-dev07/frontend</a></td>
+      </tr>
+      <tr>
+        <th>Docker Hub Backend URL</th>
+        <td><a href="https://hub.docker.com/r/garvit-dev07/backend">https://hub.docker.com/r/garvit-dev07/backend</a></td>
+      </tr>
+      <tr>
+        <th>GitHub Actions CD Workflow URL</th>
+        <td><a href="https://github.com/garvit-dev07/MSE-2-SSED-Evening/actions">https://github.com/garvit-dev07/MSE-2-SSED-Evening/actions</a></td>
+      </tr>
+      <tr>
+        <th>Pull Request Title</th>
+        <td><strong>DOCKER-SET-2 | 202501200004 | Garvit Tyagi | AIML-B</strong></td>
+      </tr>
+    </table>
+
+    <h2 class="section-head">C. Implementation Evidence &amp; Technical Execution</h2>
+    
+    <h3 class="sub-section-head">1. Frontend Dockerfile (Multi-Stage Build)</h3>
+    <div class="text-desc">A 2-stage build is implemented: Stage 1 uses Node.js (<code>node:20-slim</code>) to compile the Vite React app into static bundle artifacts. Stage 2 copies only <code>/app/dist</code> into a lightweight Nginx web server (<code>nginx:1.27-alpine</code>) with reverse proxying for <code>/api/</code> and <code>/health</code> endpoints. Passes Hadolint with zero warnings.</div>
+    <div class="code-block">FROM node:20-slim AS build
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+RUN npm run build
+
+FROM nginx:1.27-alpine AS production
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=build /app/dist /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]</div>
+
+    <h3 class="sub-section-head">2. Backend Dockerfile (Multi-Stage Production Build)</h3>
+    <div class="text-desc">Stage 1 installs strictly production dependencies (<code>npm install --omit=dev</code>). Stage 2 uses a clean Node 20 runtime, sets <code>NODE_ENV=production</code>, configures a non-root user (<code>USER 1000:1000</code>) for security, exposes port 3000, and passes Hadolint linting with zero warnings.</div>
+    <div class="code-block">FROM node:20-alpine AS dependencies
+WORKDIR /app
+COPY package*.json ./
+RUN npm install --omit=dev
+
+FROM node:20-alpine AS production
+ENV NODE_ENV=production
+WORKDIR /app
+COPY --from=dependencies /app/node_modules ./node_modules
+COPY package*.json ./
+COPY src ./src
+USER 1000:1000
+EXPOSE 3000
+CMD ["npm", "start"]</div>
+  </div>
+
+  <div class="page-footer">
+    <span>Garvit Tyagi | 202501200004 | AIML-B</span>
+    <span>Page 1 of 4</span>
+  </div>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page">
+  <div>
+    <div class="page-header">Mid-Semester Examination 2 | Software Engineering and DevOps (AI310B) - Set 2</div>
+
+    <h3 class="sub-section-head">3. Docker Compose Configuration (docker-compose.yml)</h3>
+    <div class="text-desc">Defines 4 interconnected services on a custom bridge network (<code>taskflow</code>). PostgreSQL and Redis do not expose external ports to host. Backend and Frontend define healthcheck conditions and dependency chains.</div>
+    <div class="code-block">services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: taskflow
+      POSTGRES_USER: taskflow_user
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./backend/db/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    networks:
+      - taskflow
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U taskflow_user -d taskflow"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    command: redis-server --appendonly yes
+    volumes:
+      - redis_data:/data
+    networks:
+      - taskflow
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      DATABASE_URL: postgresql://taskflow_user:${POSTGRES_PASSWORD}@postgres:5432/taskflow
+      REDIS_URL: redis://redis:6379
+      JWT_SECRET: ${JWT_SECRET}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - taskflow
+    healthcheck:
+      test:
+        - CMD
+        - node
+        - -e
+        - "fetch('http://127.0.0.1:3000/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks:
+      - taskflow
+
+networks:
+  taskflow:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  redis_data:</div>
+  </div>
+
+  <div class="page-footer">
+    <span>Garvit Tyagi | 202501200004 | AIML-B</span>
+    <span>Page 2 of 4</span>
+  </div>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page">
+  <div>
+    <div class="page-header">Mid-Semester Examination 2 | Software Engineering and DevOps (AI310B) - Set 2</div>
+
+    <h3 class="sub-section-head">4. Container Status &amp; Health Checks (docker compose ps)</h3>
+    <div class="code-block">NAME                          IMAGE                         STATUS                   PORTS
+mse-2-ssed-evening-backend-1  mse-2-ssed-evening-backend    Up 15 seconds (healthy)  0.0.0.0:3000->3000/tcp
+mse-2-ssed-evening-frontend-1 mse-2-ssed-evening-frontend   Up 9 seconds             0.0.0.0:8080->80/tcp
+mse-2-ssed-evening-postgres-1 postgres:16-alpine            Up 26 seconds (healthy)  5432/tcp (internal only)
+mse-2-ssed-evening-redis-1    redis:7-alpine                Up 26 seconds (healthy)  6379/tcp (internal only)</div>
+
+    <h3 class="sub-section-head">5. Custom Docker Network &amp; DNS Resolution Verification</h3>
+    <div class="text-desc">Containers communicate across the isolated custom bridge network <code>mse-2-ssed-evening_taskflow</code> using Docker DNS names:</div>
+    <div class="code-block">> docker compose exec backend node -e "require('dns').lookup('postgres', (e,a)=>console.log('postgres:', a)); require('dns').lookup('redis', (e,a)=>console.log('redis:', a));"
+postgres: 172.18.0.2
+redis: 172.18.0.3
+
+> docker network inspect mse-2-ssed-evening_taskflow (IPAM Subnet: 172.18.0.0/16)
+- mse-2-ssed-evening-postgres-1: 172.18.0.2/16
+- mse-2-ssed-evening-redis-1:    172.18.0.3/16
+- mse-2-ssed-evening-backend-1:  172.18.0.4/16
+- mse-2-ssed-evening-frontend-1: 172.18.0.5/16</div>
+
+    <h3 class="sub-section-head">6. PostgreSQL Data Persistence Verification</h3>
+    <div class="text-desc">Data persists across container recreation using the named volume <code>postgres_data</code>. Test steps executed:</div>
+    <div class="code-block"># Step 1: Query users registered during test execution
+> docker compose exec postgres psql -U taskflow_user -d taskflow -c "SELECT id, name, email FROM users;"
+ id |      name      |              email              
+----+----------------+---------------------------------
+  1 | Docker Student | student-1794992081811@example.com
+(1 row)
+
+# Step 2: Remove PostgreSQL container forcefully
+> docker compose rm -f -s postgres
+Container mse-2-ssed-evening-postgres-1 Stopped & Removed
+
+# Step 3: Recreate PostgreSQL container with the existing named volume
+> docker compose up -d postgres
+Container mse-2-ssed-evening-postgres-1 Started (healthy)
+
+# Step 4: Verify record is preserved
+> docker compose exec postgres psql -U taskflow_user -d taskflow -c "SELECT id, name, email FROM users;"
+ id |      name      |              email              
+----+----------------+---------------------------------
+  1 | Docker Student | student-1794992081811@example.com
+(1 row) --> DATA PERSISTENCE VERIFIED SUCCESSFULLY</div>
+
+    <h3 class="sub-section-head">7. Docker Hub Image Publishing (Tags: v1 and latest)</h3>
+    <div class="text-desc">Images were built, tagged, and published to Docker Hub under account <strong>garvit-dev07</strong>:</div>
+    <div class="code-block">> docker images garvit-dev07/*
+IMAGE                   TAG     IMAGE ID      SIZE
+garvit-dev07/frontend   latest  4d99d7d6c11c  21MB
+garvit-dev07/frontend   v1      4d99d7d6c11c  21MB
+garvit-dev07/backend    latest  1ecd272e7274  49.5MB
+garvit-dev07/backend    v1      1ecd272e7274  49.5MB
+
+> docker push garvit-dev07/frontend:latest -> Pushed (digest: sha256:4d99d7d6...)
+> docker push garvit-dev07/frontend:v1     -> Pushed (digest: sha256:4d99d7d6...)
+> docker push garvit-dev07/backend:latest  -> Pushed (digest: sha256:1ecd272e...)
+> docker push garvit-dev07/backend:v1      -> Pushed (digest: sha256:1ecd272e...)</div>
+
+    <h3 class="sub-section-head">8. Image-Based Deployment (docker-compose.deploy.yml)</h3>
+    <div class="text-desc">Deploys using published Docker Hub images without requiring local source code build:</div>
+  </div>
+
+  <div class="page-footer">
+    <span>Garvit Tyagi | 202501200004 | AIML-B</span>
+    <span>Page 3 of 4</span>
+  </div>
+</div>
+
+<!-- PAGE 4 -->
+<div class="page">
+  <div>
+    <div class="page-header">Mid-Semester Examination 2 | Software Engineering and DevOps (AI310B) - Set 2</div>
+
+    <div class="code-block">> docker compose -f docker-compose.deploy.yml up -d
+Container mse-2-ssed-evening-postgres-1 Started (healthy)
+Container mse-2-ssed-evening-redis-1 Started (healthy)
+Container mse-2-ssed-evening-backend-1 Started (healthy)
+Container mse-2-ssed-evening-frontend-1 Started
+
+> docker compose -f docker-compose.deploy.yml ps
+NAME                          IMAGE                          STATUS                   PORTS
+mse-2-ssed-evening-backend-1  garvit-dev07/backend:latest    Up 19 seconds (healthy)  0.0.0.0:3000->3000/tcp
+mse-2-ssed-evening-frontend-1 garvit-dev07/frontend:latest   Up 12 seconds            0.0.0.0:8080->80/tcp
+mse-2-ssed-evening-postgres-1 postgres:16-alpine             Up 30 seconds (healthy)  5432/tcp
+mse-2-ssed-evening-redis-1    redis:7-alpine                 Up 30 seconds (healthy)  6379/tcp</div>
+
+    <h3 class="sub-section-head">9. Full Application API &amp; Redis Cache Test Results</h3>
+    <div class="text-desc">All 12 Jest test cases passed against the running deployment stack:</div>
+    <div class="code-block">> npm test
+PASS tests/api.test.js
+TaskFlow deployed API
+  √ TC01: health endpoint confirms API, PostgreSQL and Redis (64 ms)
+  √ TC02: register a user (228 ms)
+  √ TC03: reject duplicate email (149 ms)
+  √ TC04: login and receive token (187 ms)
+  √ TC05: reject unauthenticated task request (9 ms)
+  √ TC06: create a task (23 ms)
+  √ TC07: list tasks and populate cache (17 ms)
+  √ TC08: subsequent list can be served from Redis (11 ms)
+  √ TC09: update task status and invalidate cache (16 ms)
+  √ TC10: reject invalid task status (10 ms)
+  √ TC11: delete task (13 ms)
+  √ TC12: deleted task is no longer in list (11 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       12 passed, 12 total
+Time:        2.083 s</div>
+
+    <h2 class="section-head">D. Declaration</h2>
+    <div class="declaration-box">
+      "I hereby declare that the submitted implementation has been completed by me. I have tested the Docker configurations, Docker Compose deployment, Docker Hub image publishing and GitHub Actions CI/CD pipeline. The screenshots and evidence included in this document represent my actual implementation."
+    </div>
+
+    <div class="sig-row">
+      <div>
+        Student Signature: <strong>Garvit Tyagi</strong><br>
+        Roll No: <strong>202501200004</strong>
+      </div>
+      <div style="text-align: right;">
+        Date: <strong>18 November 2026</strong><br>
+        Section / Branch: <strong>AIML-B / AI &amp; ML</strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-footer">
+    <span>Garvit Tyagi | 202501200004 | AIML-B</span>
+    <span>Page 4 of 4</span>
+  </div>
+</div>
+
+</body>
+</html>
