@@ -1,3 +1,4 @@
+
 services:
   postgres:
     image: postgres:16-alpine
@@ -15,6 +16,7 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+    restart: unless-stopped
 
   redis:
     image: redis:7-alpine
@@ -28,6 +30,7 @@ services:
       interval: 10s
       timeout: 3s
       retries: 5
+    restart: unless-stopped
 
   backend:
     image: ${DOCKERHUB_USERNAME}/backend:latest
